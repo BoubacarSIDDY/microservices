@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+
+info:
+  title: API des classes # ça sera utiliser pour les endPoint @RequestMapping("${openapi.aPIDeTest.base-path:/service/api}")
+  version: "1.0"
+  description: Documentation du microservices des classes
+
+servers:
+  - url: http://localhost:8080/classes/api
+
+tags:
+  - name: Classes
+    description: Classes specific data.
+  - name: Filiere
+    description: Filiere specific data.
+  - name: Cycle
+    description: Cycle specific data.
+paths:
+
+  ##############
+  ## API Classes ##
+  ##############
+
+  /classes:
+    $ref: '../components/api/classes.yml#/paths/~1classes' # ~1 => signifie slash(/)
+  /classes/{code}:
+    $ref: '../components/api/classes.yml#/paths/~1classes-reference'
