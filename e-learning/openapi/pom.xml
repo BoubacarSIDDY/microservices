@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.groupeisi</groupId>
+    <groupId>com.groupeisi</groupId>
     <artifactId>openapi</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -18,8 +18,6 @@
         <openapi-cds.version>0.1.0</openapi-cds.version>
         <openapi-internal.version>0.1.0</openapi-internal.version>
     </properties>
-
-    <dependencies/>
 
     <build>
         <finalName>openapi</finalName>
@@ -40,8 +38,9 @@
                 <includes>
                     <include>components/model/enums/*.yml</include>
                     <include>components/model/*.yml</include>
+                    <include>components/model/*/*.yml</include>
                     <include>interfaces/*.yml</include>
-                    <include>api/*.yml</include>
+                    <include>components/api/*.yml</include>
                 </includes>
             </resource>
         </resources>

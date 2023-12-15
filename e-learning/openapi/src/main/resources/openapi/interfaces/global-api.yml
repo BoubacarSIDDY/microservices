@@ -11,10 +11,10 @@ servers:
 tags:
   - name: Classes
     description: Classes specific data.
-  - name: Filiere
-    description: Filiere specific data.
-  - name: Cycle
-    description: Cycle specific data.
+  - name: Filieres
+    description: Filieres specific data.
+  - name: Cycles
+    description: Cycles specific data.
 paths:
 
   ##############
@@ -23,5 +23,5 @@ paths:
 
   /classes:
     $ref: '../components/api/classes.yml#/paths/~1classes' # ~1 => signifie slash(/)
-  /classes/{code}:
+  /classes/{idClasse}:
     $ref: '../components/api/classes.yml#/paths/~1classes-reference'

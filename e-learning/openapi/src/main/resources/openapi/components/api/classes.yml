@@ -1,7 +1,7 @@
 openapi: "3.0.0"
 
 info:
-  title: API Classe
+  title: API Classes
   version: "1.0"
   description: E-Learning API
 
@@ -9,14 +9,14 @@ servers:
   - url: http://localhost:8080/classes/api
 
 tags:
-  - name: Classe
+  - name: Classes
     description: Classe specific data.
 
 paths:
   /classes:
     get:
       tags:
-        - Classe
+        - Classes
       summary: Get All Actifs Classes
       operationId: getAllClasses
       parameters:
@@ -46,7 +46,7 @@ paths:
   /classes-reference:
     get:
       tags:
-        - Classe
+        - Classes
       summary: Retrieve an classe
       operationId: getClasse
       parameters:

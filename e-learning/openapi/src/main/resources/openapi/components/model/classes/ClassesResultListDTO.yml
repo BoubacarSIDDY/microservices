@@ -4,4 +4,4 @@ properties:
     type: array
     description: The List of the ClasseDTO
     items:
-      $ref: './ClasseDTO.yml' # va indexer qu'on ClasseDTO
+      $ref: './ClasseDTO.yml' # va indexer ClasseDTO
